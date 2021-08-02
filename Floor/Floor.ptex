@@ -1,0 +1,1311 @@
+{
+	"connections": [
+		{
+			"from": "image",
+			"from_port": 0,
+			"to": "graph",
+			"to_port": 0
+		},
+		{
+			"from": "image_2",
+			"from_port": 0,
+			"to": "brush_select_from_id",
+			"to_port": 1
+		},
+		{
+			"from": "brush_select_from_id",
+			"from_port": 0,
+			"to": "decompose_2",
+			"to_port": 0
+		},
+		{
+			"from": "image_2",
+			"from_port": 0,
+			"to": "14688",
+			"to_port": 0
+		},
+		{
+			"from": "image_5",
+			"from_port": 0,
+			"to": "smooth_curvature2",
+			"to_port": 0
+		},
+		{
+			"from": "fbm2",
+			"from_port": 0,
+			"to": "normal_map",
+			"to_port": 0
+		},
+		{
+			"from": "normal_map",
+			"from_port": 0,
+			"to": "15604",
+			"to_port": 0
+		},
+		{
+			"from": "15604",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 4
+		},
+		{
+			"from": "fbm2_7",
+			"from_port": 0,
+			"to": "colorize_6",
+			"to_port": 0
+		},
+		{
+			"from": "colorize_6",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 0
+		},
+		{
+			"from": "fbm2_3",
+			"from_port": 0,
+			"to": "warp",
+			"to_port": 0
+		},
+		{
+			"from": "fbm2_4",
+			"from_port": 0,
+			"to": "warp",
+			"to_port": 1
+		},
+		{
+			"from": "warp",
+			"from_port": 0,
+			"to": "colorize_7",
+			"to_port": 0
+		},
+		{
+			"from": "image_3",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 5
+		},
+		{
+			"from": "colorize_7",
+			"from_port": 0,
+			"to": "transform2",
+			"to_port": 0
+		},
+		{
+			"from": "14688",
+			"from_port": 0,
+			"to": "decompose_3",
+			"to_port": 0
+		},
+		{
+			"from": "14688",
+			"from_port": 0,
+			"to": "transform2",
+			"to_port": 1
+		},
+		{
+			"from": "14688",
+			"from_port": 0,
+			"to": "transform2",
+			"to_port": 2
+		},
+		{
+			"from": "transform2",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 1
+		},
+		{
+			"from": "fbm2_4",
+			"from_port": 0,
+			"to": "warp_2",
+			"to_port": 1
+		},
+		{
+			"from": "fbm2_5",
+			"from_port": 0,
+			"to": "warp_2",
+			"to_port": 0
+		},
+		{
+			"from": "14688",
+			"from_port": 0,
+			"to": "transform2_2",
+			"to_port": 1
+		},
+		{
+			"from": "14688",
+			"from_port": 0,
+			"to": "transform2_2",
+			"to_port": 2
+		},
+		{
+			"from": "warp_2",
+			"from_port": 0,
+			"to": "transform2_2",
+			"to_port": 0
+		},
+		{
+			"from": "transform2_2",
+			"from_port": 0,
+			"to": "colorize",
+			"to_port": 0
+		},
+		{
+			"from": "blend_2",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 2
+		},
+		{
+			"from": "smooth_curvature2",
+			"from_port": 0,
+			"to": "tones_step",
+			"to_port": 0
+		},
+		{
+			"from": "colorize",
+			"from_port": 0,
+			"to": "blend_3",
+			"to_port": 1
+		},
+		{
+			"from": "tones_step",
+			"from_port": 0,
+			"to": "blend_3",
+			"to_port": 0
+		},
+		{
+			"from": "blend_3",
+			"from_port": 0,
+			"to": "blend_2",
+			"to_port": 1
+		},
+		{
+			"from": "blend",
+			"from_port": 0,
+			"to": "blend_4",
+			"to_port": 1
+		},
+		{
+			"from": "tones_step",
+			"from_port": 0,
+			"to": "blend_4",
+			"to_port": 0
+		},
+		{
+			"from": "blend_4",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "decompose_2",
+			"from_port": 3,
+			"to": "warp_3",
+			"to_port": 0
+		},
+		{
+			"from": "smooth_curvature2",
+			"from_port": 0,
+			"to": "fast_blur",
+			"to_port": 0
+		},
+		{
+			"from": "fast_blur",
+			"from_port": 0,
+			"to": "normal_map_2",
+			"to_port": 0
+		},
+		{
+			"from": "graph",
+			"from_port": 0,
+			"to": "15604_2",
+			"to_port": 1
+		},
+		{
+			"from": "normal_map_2",
+			"from_port": 0,
+			"to": "15604_2",
+			"to_port": 0
+		},
+		{
+			"from": "15604_2",
+			"from_port": 0,
+			"to": "15604",
+			"to_port": 1
+		},
+		{
+			"from": "fbm2_2",
+			"from_port": 0,
+			"to": "warp_3",
+			"to_port": 1
+		},
+		{
+			"from": "warp_3",
+			"from_port": 0,
+			"to": "blend_2",
+			"to_port": 0
+		},
+		{
+			"from": "warp_3",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 2
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "275",
+	"node_position": {
+		"x": 0,
+		"y": 0
+	},
+	"nodes": [
+		{
+			"export_paths": {
+
+			},
+			"name": "Material",
+			"node_position": {
+				"x": 1543.199951,
+				"y": 325.442383
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1,
+					"b": 1,
+					"g": 1,
+					"r": 1,
+					"type": "Color"
+				},
+				"ao": 1,
+				"depth_scale": 0.5,
+				"emission_energy": 1,
+				"flags_transparent": false,
+				"metallic": 0,
+				"normal": 1,
+				"roughness": 1,
+				"size": 12,
+				"sss": 0
+			},
+			"type": "material"
+		},
+		{
+			"name": "image",
+			"node_position": {
+				"x": 680.800049,
+				"y": -287.085724
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/floor_normal_tangent.png"
+			},
+			"type": "image"
+		},
+		{
+			"name": "image_2",
+			"node_position": {
+				"x": -150.400009,
+				"y": 428.567749
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/floor_id.png"
+			},
+			"type": "image"
+		},
+		{
+			"name": "image_3",
+			"node_position": {
+				"x": 692.800049,
+				"y": 702.035339
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/floor_ao.png"
+			},
+			"type": "image"
+		},
+		{
+			"name": "image_4",
+			"node_position": {
+				"x": -160.800018,
+				"y": 255.85141
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/floor_curvature.png"
+			},
+			"type": "image"
+		},
+		{
+			"name": "image_5",
+			"node_position": {
+				"x": 167.200043,
+				"y": -2.423519
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/floor_height.png"
+			},
+			"type": "image"
+		},
+		{
+			"name": "brush_select_from_id",
+			"node_position": {
+				"x": 3.599884,
+				"y": 444.873169
+			},
+			"parameters": {
+				"id": {
+					"a": 1,
+					"b": 0,
+					"g": 0,
+					"r": 1,
+					"type": "Color"
+				}
+			},
+			"type": "brush_select_from_id"
+		},
+		{
+			"name": "decompose_2",
+			"node_position": {
+				"x": -6.800012,
+				"y": 545.696472
+			},
+			"parameters": {
+
+			},
+			"preview": 3,
+			"type": "decompose"
+		},
+		{
+			"name": "14688",
+			"node_position": {
+				"x": 10.000026,
+				"y": 368.982086
+			},
+			"parameters": {
+
+			},
+			"shader_model": {
+				"code": "vec3 $(name_uv)_rand = $in($uv);",
+				"global": "",
+				"inputs": [
+					{
+						"default": "0.0",
+						"label": "",
+						"name": "in",
+						"type": "rgb"
+					}
+				],
+				"instance": "",
+				"longdesc": "Takes a random RGB input and generates a new set of random values",
+				"name": "Randomize",
+				"outputs": [
+					{
+						"rgb": "rand3( vec2( float($seed) + $(name_uv)_rand.x, rand( $(name_uv)_rand.yz ) ) )",
+						"type": "rgb"
+					}
+				],
+				"parameters": [
+
+				],
+				"shortdesc": "Randomize"
+			},
+			"type": "shader"
+		},
+		{
+			"name": "smooth_curvature2",
+			"node_position": {
+				"x": 318.800018,
+				"y": 96.911385
+			},
+			"parameters": {
+				"param0": 12,
+				"param1": 8,
+				"param2": 1,
+				"param3": 0.17,
+				"param4": 1
+			},
+			"type": "smooth_curvature2"
+		},
+		{
+			"name": "fbm2",
+			"node_position": {
+				"x": 1004.800049,
+				"y": -495.784668
+			},
+			"parameters": {
+				"folds": 0,
+				"iterations": 7,
+				"noise": 0,
+				"persistence": 0.88,
+				"scale_x": 64,
+				"scale_y": 64
+			},
+			"type": "fbm2"
+		},
+		{
+			"name": "normal_map",
+			"node_position": {
+				"x": 1286.000122,
+				"y": -451.622986
+			},
+			"parameters": {
+				"param0": 12,
+				"param1": 1,
+				"param2": 1,
+				"param4": 1
+			},
+			"type": "normal_map"
+		},
+		{
+			"name": "15604",
+			"node_position": {
+				"x": 1389.800171,
+				"y": -245.630219
+			},
+			"parameters": {
+				"amount": 0.05,
+				"blend_type": 0,
+				"format": 1
+			},
+			"shader_model": {
+				"code": "",
+				"global": "vec3 pre_process_default(vec3 c) {\n\tfloat z = sqrt(1.0-c.x*c.x-c.y*c.y);\n\treturn vec3(c.x, c.y, z); \n}\n\nvec3 pre_process_other(vec3 c) {\n\treturn c;\n}\n\nvec3 post_process_default(vec3 c) {\n\treturn vec3(c.x, c.y, 0.0);\n}\n\nvec3 post_process_other(vec3 c) {\n\treturn c;\n}",
+				"inputs": [
+					{
+						"default": "vec3(0.05, 0.5, 1.0)",
+						"label": "Source1",
+						"name": "s1",
+						"type": "rgb"
+					},
+					{
+						"default": "vec3(0.05, 0.5, 1.0)",
+						"label": "Source2",
+						"name": "s2",
+						"type": "rgb"
+					},
+					{
+						"default": "1.0",
+						"label": "Oppacity",
+						"name": "a",
+						"type": "f"
+					}
+				],
+				"instance": "vec3 $(name)_blend_reorient(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1) * 0.5 + 0.5;\n\tn2 = pre_process_$format(n2) * 0.5 + 0.5;\n\tvec3 t = n1*vec3( 2,  2, 2) + vec3(-1, -1,  0);\n\tvec3 u = n2*vec3(-2, -2, 2) + vec3( 1,  1, -1);\n\tvec3 r = mix(n2 * 2.0 - 1.0, t * dot(t, u) / t.z - u, opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}\n\nvec3 $(name)_blend_whiteout(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1);\n\tn2 = pre_process_$format(n2);\n\tvec3 r = mix(n2, normalize(vec3(n1.xy + n2.xy, n1.z*n2.z)), opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}\n\nvec3 $(name)_blend_udn(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1);\n\tn2 = pre_process_$format(n2);\n\tvec3 r = mix(n2, normalize(vec3(n1.xy + n2.xy, n1.z)), opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}",
+				"name": "Normal Blend",
+				"outputs": [
+					{
+						"rgb": "$(name)_blend_$blend_type($uv, $s1($uv), $s2($uv), $amount * $a($uv))",
+						"type": "rgb"
+					}
+				],
+				"parameters": [
+					{
+						"default": 0,
+						"label": "",
+						"longdesc": "Ensure that you set the format to the same normal format as the input format for correct results. Output will be in selected format.",
+						"name": "format",
+						"shortdesc": "Format",
+						"type": "enum",
+						"values": [
+							{
+								"name": "Default",
+								"value": "default"
+							},
+							{
+								"name": "OpenGL",
+								"value": "other"
+							},
+							{
+								"name": "DirectX",
+								"value": "other"
+							}
+						]
+					},
+					{
+						"default": 0,
+						"label": "",
+						"name": "blend_type",
+						"type": "enum",
+						"values": [
+							{
+								"name": "Reorient",
+								"value": "reorient"
+							},
+							{
+								"name": "Whiteout",
+								"value": "whiteout"
+							},
+							{
+								"name": "UDN",
+								"value": "udn"
+							}
+						]
+					},
+					{
+						"control": "None",
+						"default": 0.5,
+						"label": "",
+						"max": 1,
+						"min": 0,
+						"name": "amount",
+						"step": 0.01,
+						"type": "float"
+					}
+				]
+			},
+			"type": "shader"
+		},
+		{
+			"name": "fbm2_7",
+			"node_position": {
+				"x": -138.449982,
+				"y": -342.061218
+			},
+			"parameters": {
+				"folds": 0,
+				"iterations": 9,
+				"noise": 0,
+				"persistence": 0.9,
+				"scale_x": 4,
+				"scale_y": 4
+			},
+			"type": "fbm2"
+		},
+		{
+			"name": "colorize_6",
+			"node_position": {
+				"x": 158.550018,
+				"y": -244.061218
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.130371,
+							"g": 0.188599,
+							"pos": 0,
+							"r": 0.275391
+						},
+						{
+							"a": 1,
+							"b": 0.12915,
+							"g": 0.187744,
+							"pos": 0.254546,
+							"r": 0.276123
+						},
+						{
+							"a": 1,
+							"b": 0.493408,
+							"g": 0.566895,
+							"pos": 0.639063,
+							"r": 0.670898
+						},
+						{
+							"a": 1,
+							"b": 0.612793,
+							"g": 0.69873,
+							"pos": 1,
+							"r": 0.812012
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"type": "colorize"
+		},
+		{
+			"name": "blend",
+			"node_position": {
+				"x": 850.399963,
+				"y": 101.125381
+			},
+			"parameters": {
+				"amount": 1,
+				"blend_type": 0
+			},
+			"type": "blend"
+		},
+		{
+			"name": "colorize_7",
+			"node_position": {
+				"x": 145.674896,
+				"y": 890.74353
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.447266,
+							"g": 0.493652,
+							"pos": 0,
+							"r": 0.516113
+						},
+						{
+							"a": 1,
+							"b": 0.417969,
+							"g": 0.451134,
+							"pos": 0.076412,
+							"r": 0.485352
+						},
+						{
+							"a": 1,
+							"b": 0.378174,
+							"g": 0.39209,
+							"pos": 0.184385,
+							"r": 0.407959
+						},
+						{
+							"a": 1,
+							"b": 0.359131,
+							"g": 0.371826,
+							"pos": 0.251015,
+							"r": 0.391846
+						},
+						{
+							"a": 1,
+							"b": 0.378174,
+							"g": 0.39209,
+							"pos": 0.305648,
+							"r": 0.407959
+						},
+						{
+							"a": 1,
+							"b": 0.328369,
+							"g": 0.355957,
+							"pos": 0.373827,
+							"r": 0.371338
+						},
+						{
+							"a": 1,
+							"b": 0.33374,
+							"g": 0.366455,
+							"pos": 0.393062,
+							"r": 0.380859
+						},
+						{
+							"a": 1,
+							"b": 0.33374,
+							"g": 0.366455,
+							"pos": 0.412288,
+							"r": 0.380859
+						},
+						{
+							"a": 1,
+							"b": 0.328369,
+							"g": 0.347504,
+							"pos": 0.431523,
+							"r": 0.371338
+						},
+						{
+							"a": 1,
+							"b": 0.247559,
+							"g": 0.259277,
+							"pos": 0.623874,
+							"r": 0.290039
+						},
+						{
+							"a": 1,
+							"b": 0.255371,
+							"g": 0.26709,
+							"pos": 0.662344,
+							"r": 0.296875
+						},
+						{
+							"a": 1,
+							"b": 0.294434,
+							"g": 0.326534,
+							"pos": 0.749169,
+							"r": 0.375
+						},
+						{
+							"a": 1,
+							"b": 0.288818,
+							"g": 0.308105,
+							"pos": 0.810599,
+							"r": 0.337158
+						},
+						{
+							"a": 1,
+							"b": 0.297363,
+							"g": 0.316406,
+							"pos": 0.879942,
+							"r": 0.351563
+						},
+						{
+							"a": 1,
+							"b": 0.310059,
+							"g": 0.332764,
+							"pos": 0.907138,
+							"r": 0.358643
+						},
+						{
+							"a": 1,
+							"b": 0.310059,
+							"g": 0.332764,
+							"pos": 0.926373,
+							"r": 0.358643
+						},
+						{
+							"a": 1,
+							"b": 0.32251,
+							"g": 0.348145,
+							"pos": 0.953569,
+							"r": 0.364258
+						},
+						{
+							"a": 1,
+							"b": 0.331055,
+							"g": 0.356201,
+							"pos": 0.972804,
+							"r": 0.373047
+						},
+						{
+							"a": 1,
+							"b": 0.363525,
+							"g": 0.390869,
+							"pos": 1,
+							"r": 0.397949
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"type": "colorize"
+		},
+		{
+			"name": "warp",
+			"node_position": {
+				"x": -58.125,
+				"y": 902.109375
+			},
+			"parameters": {
+				"amount": 0.035,
+				"eps": 0.1,
+				"mode": 0
+			},
+			"type": "warp"
+		},
+		{
+			"name": "fbm2_3",
+			"node_position": {
+				"x": -473.124939,
+				"y": 740.038818
+			},
+			"parameters": {
+				"folds": 0,
+				"iterations": 7,
+				"noise": 0,
+				"persistence": 0.71,
+				"scale_x": 8,
+				"scale_y": 8
+			},
+			"seed_value": -321,
+			"type": "fbm2"
+		},
+		{
+			"name": "fbm2_4",
+			"node_position": {
+				"x": -378.625,
+				"y": 976.986328
+			},
+			"parameters": {
+				"folds": 0,
+				"iterations": 10,
+				"noise": 0,
+				"persistence": 0.9,
+				"scale_x": 8,
+				"scale_y": 8
+			},
+			"seed_value": -40992,
+			"type": "fbm2"
+		},
+		{
+			"name": "transform2",
+			"node_position": {
+				"x": 385.650024,
+				"y": 714.33783
+			},
+			"parameters": {
+				"mode": 1,
+				"rotate": 0,
+				"scale_x": 1,
+				"scale_y": 1,
+				"translate_x": 1,
+				"translate_y": 1
+			},
+			"type": "transform2"
+		},
+		{
+			"name": "decompose_3",
+			"node_position": {
+				"x": 204.050079,
+				"y": 352.912964
+			},
+			"parameters": {
+
+			},
+			"type": "decompose"
+		},
+		{
+			"name": "warp_2",
+			"node_position": {
+				"x": -306.749969,
+				"y": 114.519432
+			},
+			"parameters": {
+				"amount": 0.035,
+				"eps": 0.1,
+				"mode": 0
+			},
+			"type": "warp"
+		},
+		{
+			"name": "fbm2_5",
+			"node_position": {
+				"x": -591.850037,
+				"y": 104.007904
+			},
+			"parameters": {
+				"folds": 0,
+				"iterations": 7,
+				"noise": 0,
+				"persistence": 0.71,
+				"scale_x": 8,
+				"scale_y": 8
+			},
+			"seed_value": -55545,
+			"type": "fbm2"
+		},
+		{
+			"name": "colorize",
+			"node_position": {
+				"x": -97.549927,
+				"y": 44.657406
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.550233,
+							"g": 0.550233,
+							"pos": 0,
+							"r": 0.550233
+						},
+						{
+							"a": 1,
+							"b": 0.750136,
+							"g": 0.750136,
+							"pos": 1,
+							"r": 0.750136
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"type": "colorize"
+		},
+		{
+			"name": "blend_2",
+			"node_position": {
+				"x": 596.049988,
+				"y": 410.282745
+			},
+			"parameters": {
+				"amount": 0.71,
+				"blend_type": 3
+			},
+			"type": "blend"
+		},
+		{
+			"name": "transform2_2",
+			"node_position": {
+				"x": -438.550171,
+				"y": -203.146637
+			},
+			"parameters": {
+				"mode": 1,
+				"rotate": 0,
+				"scale_x": 1,
+				"scale_y": 1,
+				"translate_x": 1,
+				"translate_y": 1
+			},
+			"type": "transform2"
+		},
+		{
+			"name": "tones_step",
+			"node_position": {
+				"x": 568.850098,
+				"y": 108.029175
+			},
+			"parameters": {
+				"invert": false,
+				"value": 0.65,
+				"width": 0.28
+			},
+			"type": "tones_step"
+		},
+		{
+			"name": "blend_3",
+			"node_position": {
+				"x": 478.450073,
+				"y": 270.350555
+			},
+			"parameters": {
+				"amount": 0.2,
+				"blend_type": 3
+			},
+			"type": "blend"
+		},
+		{
+			"name": "blend_4",
+			"node_position": {
+				"x": 874.818176,
+				"y": 262.855652
+			},
+			"parameters": {
+				"amount": 0.2,
+				"blend_type": 3
+			},
+			"type": "blend"
+		},
+		{
+			"name": "10927",
+			"node_position": {
+				"x": 470.712189,
+				"y": -677.897217
+			},
+			"parameters": {
+				"param0": 12
+			},
+			"type": "remote",
+			"widgets": [
+				{
+					"label": "Unnamed",
+					"linked_widgets": [
+						{
+							"node": "normal_map",
+							"widget": "param0"
+						},
+						{
+							"node": "smooth_curvature2",
+							"widget": "param0"
+						},
+						{
+							"node": "fast_blur",
+							"widget": "param0"
+						},
+						{
+							"node": "normal_map_2",
+							"widget": "param0"
+						}
+					],
+					"name": "param0",
+					"type": "linked_control"
+				}
+			]
+		},
+		{
+			"name": "warp_3",
+			"node_position": {
+				"x": 376.712189,
+				"y": 557.687378
+			},
+			"parameters": {
+				"amount": 0.005,
+				"eps": 0.1,
+				"mode": 0
+			},
+			"type": "warp"
+		},
+		{
+			"name": "fast_blur",
+			"node_position": {
+				"x": 489.512115,
+				"y": -8.438408
+			},
+			"parameters": {
+				"param0": 12,
+				"param1": 3,
+				"param2": 2
+			},
+			"type": "fast_blur"
+		},
+		{
+			"name": "normal_map_2",
+			"node_position": {
+				"x": 1140.739868,
+				"y": 50.036072
+			},
+			"parameters": {
+				"param0": 12,
+				"param1": 1,
+				"param2": 1,
+				"param4": 1
+			},
+			"type": "normal_map"
+		},
+		{
+			"connections": [
+				{
+					"from": "gen_inputs",
+					"from_port": 0,
+					"to": "decompose",
+					"to_port": 0
+				},
+				{
+					"from": "decompose",
+					"from_port": 0,
+					"to": "invert",
+					"to_port": 0
+				},
+				{
+					"from": "decompose",
+					"from_port": 1,
+					"to": "combine",
+					"to_port": 1
+				},
+				{
+					"from": "decompose",
+					"from_port": 2,
+					"to": "combine",
+					"to_port": 2
+				},
+				{
+					"from": "combine",
+					"from_port": 0,
+					"to": "gen_outputs",
+					"to_port": 0
+				},
+				{
+					"from": "invert",
+					"from_port": 0,
+					"to": "combine",
+					"to_port": 0
+				}
+			],
+			"label": "precompute normals",
+			"longdesc": "",
+			"name": "graph",
+			"node_position": {
+				"x": 836.266602,
+				"y": -260.342987
+			},
+			"nodes": [
+				{
+					"name": "invert",
+					"node_position": {
+						"x": 878,
+						"y": -311.488403
+					},
+					"parameters": {
+
+					},
+					"type": "invert"
+				},
+				{
+					"name": "combine",
+					"node_position": {
+						"x": 999.200073,
+						"y": -262.297699
+					},
+					"parameters": {
+
+					},
+					"type": "combine"
+				},
+				{
+					"name": "decompose",
+					"node_position": {
+						"x": 775.599976,
+						"y": -237.924026
+					},
+					"parameters": {
+
+					},
+					"type": "decompose"
+				},
+				{
+					"name": "gen_inputs",
+					"node_position": {
+						"x": 475.599976,
+						"y": -270.570038
+					},
+					"parameters": {
+
+					},
+					"ports": [
+						{
+							"group_size": 0,
+							"name": "port0",
+							"type": "rgba"
+						}
+					],
+					"type": "ios"
+				},
+				{
+					"name": "gen_outputs",
+					"node_position": {
+						"x": 1299.200073,
+						"y": -270.570038
+					},
+					"parameters": {
+
+					},
+					"ports": [
+						{
+							"group_size": 0,
+							"name": "port0",
+							"type": "rgba"
+						}
+					],
+					"type": "ios"
+				},
+				{
+					"name": "gen_parameters",
+					"node_position": {
+						"x": 684.266663,
+						"y": -611.488403
+					},
+					"parameters": {
+
+					},
+					"type": "remote",
+					"widgets": [
+
+					]
+				}
+			],
+			"parameters": {
+
+			},
+			"shortdesc": "",
+			"type": "graph"
+		},
+		{
+			"name": "15604_2",
+			"node_position": {
+				"x": 1105.249634,
+				"y": -168.021042
+			},
+			"parameters": {
+				"amount": 0.1,
+				"blend_type": 0,
+				"format": 1
+			},
+			"shader_model": {
+				"code": "",
+				"global": "vec3 pre_process_default(vec3 c) {\n\tfloat z = sqrt(1.0-c.x*c.x-c.y*c.y);\n\treturn vec3(c.x, c.y, z); \n}\n\nvec3 pre_process_other(vec3 c) {\n\treturn c;\n}\n\nvec3 post_process_default(vec3 c) {\n\treturn vec3(c.x, c.y, 0.0);\n}\n\nvec3 post_process_other(vec3 c) {\n\treturn c;\n}",
+				"inputs": [
+					{
+						"default": "vec3(0.05, 0.5, 1.0)",
+						"label": "Source1",
+						"name": "s1",
+						"type": "rgb"
+					},
+					{
+						"default": "vec3(0.05, 0.5, 1.0)",
+						"label": "Source2",
+						"name": "s2",
+						"type": "rgb"
+					},
+					{
+						"default": "1.0",
+						"label": "Oppacity",
+						"name": "a",
+						"type": "f"
+					}
+				],
+				"instance": "vec3 $(name)_blend_reorient(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1) * 0.5 + 0.5;\n\tn2 = pre_process_$format(n2) * 0.5 + 0.5;\n\tvec3 t = n1*vec3( 2,  2, 2) + vec3(-1, -1,  0);\n\tvec3 u = n2*vec3(-2, -2, 2) + vec3( 1,  1, -1);\n\tvec3 r = mix(n2 * 2.0 - 1.0, t * dot(t, u) / t.z - u, opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}\n\nvec3 $(name)_blend_whiteout(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1);\n\tn2 = pre_process_$format(n2);\n\tvec3 r = mix(n2, normalize(vec3(n1.xy + n2.xy, n1.z*n2.z)), opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}\n\nvec3 $(name)_blend_udn(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1);\n\tn2 = pre_process_$format(n2);\n\tvec3 r = mix(n2, normalize(vec3(n1.xy + n2.xy, n1.z)), opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}",
+				"name": "Normal Blend",
+				"outputs": [
+					{
+						"rgb": "$(name)_blend_$blend_type($uv, $s1($uv), $s2($uv), $amount * $a($uv))",
+						"type": "rgb"
+					}
+				],
+				"parameters": [
+					{
+						"default": 0,
+						"label": "",
+						"longdesc": "Ensure that you set the format to the same normal format as the input format for correct results. Output will be in selected format.",
+						"name": "format",
+						"shortdesc": "Format",
+						"type": "enum",
+						"values": [
+							{
+								"name": "Default",
+								"value": "default"
+							},
+							{
+								"name": "OpenGL",
+								"value": "other"
+							},
+							{
+								"name": "DirectX",
+								"value": "other"
+							}
+						]
+					},
+					{
+						"default": 0,
+						"label": "",
+						"name": "blend_type",
+						"type": "enum",
+						"values": [
+							{
+								"name": "Reorient",
+								"value": "reorient"
+							},
+							{
+								"name": "Whiteout",
+								"value": "whiteout"
+							},
+							{
+								"name": "UDN",
+								"value": "udn"
+							}
+						]
+					},
+					{
+						"control": "None",
+						"default": 0.5,
+						"label": "",
+						"max": 1,
+						"min": 0,
+						"name": "amount",
+						"step": 0.01,
+						"type": "float"
+					}
+				]
+			},
+			"type": "shader"
+		},
+		{
+			"name": "fbm2_2",
+			"node_position": {
+				"x": 33.049828,
+				"y": 692.88562
+			},
+			"parameters": {
+				"folds": 0,
+				"iterations": 7,
+				"noise": 0,
+				"persistence": 0.87,
+				"scale_x": 64,
+				"scale_y": 64
+			},
+			"type": "fbm2"
+		}
+	],
+	"parameters": {
+
+	},
+	"shortdesc": "",
+	"type": "graph"
+}

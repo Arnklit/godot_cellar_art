@@ -1,0 +1,2057 @@
+{
+	"connections": [
+		{
+			"from": "image",
+			"from_port": 0,
+			"to": "decompose",
+			"to_port": 0
+		},
+		{
+			"from": "decompose",
+			"from_port": 0,
+			"to": "invert",
+			"to_port": 0
+		},
+		{
+			"from": "invert",
+			"from_port": 0,
+			"to": "combine",
+			"to_port": 0
+		},
+		{
+			"from": "decompose",
+			"from_port": 1,
+			"to": "combine",
+			"to_port": 1
+		},
+		{
+			"from": "decompose",
+			"from_port": 2,
+			"to": "combine",
+			"to_port": 2
+		},
+		{
+			"from": "image_2",
+			"from_port": 0,
+			"to": "brush_select_from_id",
+			"to_port": 1
+		},
+		{
+			"from": "fbm2",
+			"from_port": 0,
+			"to": "warp",
+			"to_port": 0
+		},
+		{
+			"from": "fbm2",
+			"from_port": 0,
+			"to": "warp",
+			"to_port": 1
+		},
+		{
+			"from": "fbm2",
+			"from_port": 0,
+			"to": "colorize",
+			"to_port": 0
+		},
+		{
+			"from": "colorize",
+			"from_port": 0,
+			"to": "tonality_2",
+			"to_port": 0
+		},
+		{
+			"from": "fast_blur",
+			"from_port": 0,
+			"to": "normal_map",
+			"to_port": 0
+		},
+		{
+			"from": "tex3d_fbm_2",
+			"from_port": 0,
+			"to": "tex3d_apply_invuvmap",
+			"to_port": 0
+		},
+		{
+			"from": "image_6",
+			"from_port": 0,
+			"to": "tex3d_apply_invuvmap",
+			"to_port": 1
+		},
+		{
+			"from": "tex3d_apply_invuvmap",
+			"from_port": 0,
+			"to": "tones_step_2",
+			"to_port": 0
+		},
+		{
+			"from": "tones_step_2",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 0
+		},
+		{
+			"from": "tones_step",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 1
+		},
+		{
+			"from": "blend",
+			"from_port": 0,
+			"to": "colorize_3",
+			"to_port": 0
+		},
+		{
+			"from": "blend",
+			"from_port": 0,
+			"to": "colorize_2",
+			"to_port": 0
+		},
+		{
+			"from": "tex3d_fbm_3",
+			"from_port": 0,
+			"to": "tex3d_apply_invuvmap_2",
+			"to_port": 0
+		},
+		{
+			"from": "image_5",
+			"from_port": 0,
+			"to": "tex3d_apply_invuvmap_2",
+			"to_port": 1
+		},
+		{
+			"from": "tex3d_apply_invuvmap_2",
+			"from_port": 0,
+			"to": "fast_blur",
+			"to_port": 0
+		},
+		{
+			"from": "combine",
+			"from_port": 0,
+			"to": "15604",
+			"to_port": 1
+		},
+		{
+			"from": "normal_map",
+			"from_port": 0,
+			"to": "15604",
+			"to_port": 0
+		},
+		{
+			"from": "image_4",
+			"from_port": 0,
+			"to": "tones_step_3",
+			"to_port": 0
+		},
+		{
+			"from": "tex3d_fbm_5",
+			"from_port": 0,
+			"to": "tex3d_apply_invuvmap_3",
+			"to_port": 0
+		},
+		{
+			"from": "image_7",
+			"from_port": 0,
+			"to": "tex3d_apply_invuvmap_3",
+			"to_port": 1
+		},
+		{
+			"from": "tex3d_apply_invuvmap_3",
+			"from_port": 0,
+			"to": "tones_step_4",
+			"to_port": 0
+		},
+		{
+			"from": "tones_step_4",
+			"from_port": 0,
+			"to": "blend_2",
+			"to_port": 0
+		},
+		{
+			"from": "tones_step_3",
+			"from_port": 0,
+			"to": "blend_2",
+			"to_port": 1
+		},
+		{
+			"from": "blend_2",
+			"from_port": 0,
+			"to": "blend_3",
+			"to_port": 2
+		},
+		{
+			"from": "colorize_3",
+			"from_port": 0,
+			"to": "blend_3",
+			"to_port": 1
+		},
+		{
+			"from": "colorize_2",
+			"from_port": 0,
+			"to": "blend_4",
+			"to_port": 1
+		},
+		{
+			"from": "tex3d_fbm_6",
+			"from_port": 0,
+			"to": "tex3d_apply_invuvmap_4",
+			"to_port": 0
+		},
+		{
+			"from": "image_8",
+			"from_port": 0,
+			"to": "tex3d_apply_invuvmap_4",
+			"to_port": 1
+		},
+		{
+			"from": "tex3d_apply_invuvmap_4",
+			"from_port": 0,
+			"to": "colorize_4",
+			"to_port": 0
+		},
+		{
+			"from": "blend_2",
+			"from_port": 0,
+			"to": "blend_4",
+			"to_port": 2
+		},
+		{
+			"from": "colorize_4",
+			"from_port": 0,
+			"to": "blend_4",
+			"to_port": 0
+		},
+		{
+			"from": "tex3d_fbm_7",
+			"from_port": 0,
+			"to": "tex3d_apply_invuvmap_5",
+			"to_port": 0
+		},
+		{
+			"from": "image_9",
+			"from_port": 0,
+			"to": "tex3d_apply_invuvmap_5",
+			"to_port": 1
+		},
+		{
+			"from": "tex3d_apply_invuvmap_5",
+			"from_port": 0,
+			"to": "colorize_5",
+			"to_port": 0
+		},
+		{
+			"from": "colorize_5",
+			"from_port": 0,
+			"to": "blend_3",
+			"to_port": 0
+		},
+		{
+			"from": "tex3d_apply_invuvmap_5",
+			"from_port": 0,
+			"to": "normal_map_2",
+			"to_port": 0
+		},
+		{
+			"from": "15604",
+			"from_port": 0,
+			"to": "15604_2",
+			"to_port": 1
+		},
+		{
+			"from": "normal_map_2",
+			"from_port": 0,
+			"to": "15604_2",
+			"to_port": 0
+		},
+		{
+			"from": "blend_2",
+			"from_port": 0,
+			"to": "15604_2",
+			"to_port": 2
+		},
+		{
+			"from": "brush_select_from_id",
+			"from_port": 0,
+			"to": "decompose_2",
+			"to_port": 0
+		},
+		{
+			"from": "image_3",
+			"from_port": 0,
+			"to": "blend_5",
+			"to_port": 1
+		},
+		{
+			"from": "decompose_2",
+			"from_port": 3,
+			"to": "invert_2",
+			"to_port": 0
+		},
+		{
+			"from": "invert_2",
+			"from_port": 0,
+			"to": "blend_5",
+			"to_port": 0
+		},
+		{
+			"from": "blend_5",
+			"from_port": 0,
+			"to": "tones_step",
+			"to_port": 0
+		},
+		{
+			"from": "image_10",
+			"from_port": 0,
+			"to": "tex3d_apply_invuvmap_6",
+			"to_port": 1
+		},
+		{
+			"from": "tex3d_fbm_4",
+			"from_port": 0,
+			"to": "tex3d_rotate",
+			"to_port": 0
+		},
+		{
+			"from": "tex3d_rotate",
+			"from_port": 0,
+			"to": "tex3d_apply_invuvmap_6",
+			"to_port": 0
+		},
+		{
+			"from": "tex3d_apply_invuvmap_6",
+			"from_port": 0,
+			"to": "math",
+			"to_port": 0
+		},
+		{
+			"from": "math",
+			"from_port": 0,
+			"to": "math_2",
+			"to_port": 0
+		},
+		{
+			"from": "math_2",
+			"from_port": 0,
+			"to": "colorize_6",
+			"to_port": 0
+		},
+		{
+			"from": "math_2",
+			"from_port": 0,
+			"to": "colorize_7",
+			"to_port": 0
+		},
+		{
+			"from": "tex3d_fbm_8",
+			"from_port": 0,
+			"to": "tex3d_rotate_2",
+			"to_port": 0
+		},
+		{
+			"from": "tex3d_rotate_2",
+			"from_port": 0,
+			"to": "tex3d_apply_invuvmap_7",
+			"to_port": 0
+		},
+		{
+			"from": "image_10",
+			"from_port": 0,
+			"to": "tex3d_apply_invuvmap_7",
+			"to_port": 1
+		},
+		{
+			"from": "tex3d_apply_invuvmap_7",
+			"from_port": 0,
+			"to": "normal_map_3",
+			"to_port": 0
+		},
+		{
+			"from": "image_11",
+			"from_port": 0,
+			"to": "brush_select_from_id_2",
+			"to_port": 1
+		},
+		{
+			"from": "brush_select_from_id_2",
+			"from_port": 0,
+			"to": "decompose_3",
+			"to_port": 0
+		},
+		{
+			"from": "decompose_3",
+			"from_port": 3,
+			"to": "blend_6",
+			"to_port": 2
+		},
+		{
+			"from": "blend_3",
+			"from_port": 0,
+			"to": "blend_6",
+			"to_port": 1
+		},
+		{
+			"from": "colorize_6",
+			"from_port": 0,
+			"to": "blend_6",
+			"to_port": 0
+		},
+		{
+			"from": "blend_6",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "blend",
+			"from_port": 0,
+			"to": "blend_7",
+			"to_port": 1
+		},
+		{
+			"from": "uniform_greyscale",
+			"from_port": 0,
+			"to": "blend_7",
+			"to_port": 0
+		},
+		{
+			"from": "decompose_3",
+			"from_port": 3,
+			"to": "blend_7",
+			"to_port": 2
+		},
+		{
+			"from": "blend_7",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 1
+		},
+		{
+			"from": "blend_4",
+			"from_port": 0,
+			"to": "blend_8",
+			"to_port": 1
+		},
+		{
+			"from": "colorize_7",
+			"from_port": 0,
+			"to": "blend_8",
+			"to_port": 0
+		},
+		{
+			"from": "decompose_3",
+			"from_port": 3,
+			"to": "blend_8",
+			"to_port": 2
+		},
+		{
+			"from": "blend_8",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 2
+		},
+		{
+			"from": "normal_map_3",
+			"from_port": 0,
+			"to": "15604_3",
+			"to_port": 0
+		},
+		{
+			"from": "15604_2",
+			"from_port": 0,
+			"to": "15604_3",
+			"to_port": 1
+		},
+		{
+			"from": "decompose_3",
+			"from_port": 3,
+			"to": "15604_3",
+			"to_port": 2
+		},
+		{
+			"from": "15604_3",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 4
+		},
+		{
+			"from": "image_4",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 5
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "275",
+	"node_position": {
+		"x": 0,
+		"y": 0
+	},
+	"nodes": [
+		{
+			"export_paths": {
+				"Godot": "C:/Users/Kasper/OneDrive/Docs/Projects/Videos/Video - How Good Can I Make Godot Look 2/Torch/Torch_tex"
+			},
+			"name": "Material",
+			"node_position": {
+				"x": 2287.953369,
+				"y": 880.31427
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1,
+					"b": 1,
+					"g": 1,
+					"r": 1,
+					"type": "Color"
+				},
+				"ao": 1,
+				"depth_scale": 0.5,
+				"emission_energy": 1,
+				"flags_transparent": false,
+				"metallic": 1,
+				"normal": 1,
+				"roughness": 1,
+				"size": 11,
+				"sss": 0
+			},
+			"type": "material"
+		},
+		{
+			"name": "image",
+			"node_position": {
+				"x": -319.200012,
+				"y": -226.315079
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/Torch_normal_tangent.png"
+			},
+			"type": "image"
+		},
+		{
+			"name": "decompose",
+			"node_position": {
+				"x": -102.000031,
+				"y": -209.937561
+			},
+			"parameters": {
+
+			},
+			"type": "decompose"
+		},
+		{
+			"name": "invert",
+			"node_position": {
+				"x": 92.399948,
+				"y": -226.729446
+			},
+			"parameters": {
+
+			},
+			"type": "invert"
+		},
+		{
+			"name": "combine",
+			"node_position": {
+				"x": 232.000046,
+				"y": -216.719772
+			},
+			"parameters": {
+
+			},
+			"type": "combine"
+		},
+		{
+			"name": "image_2",
+			"node_position": {
+				"x": -1397.600098,
+				"y": 847.564819
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/Torch_ID.png"
+			},
+			"type": "image"
+		},
+		{
+			"name": "image_3",
+			"node_position": {
+				"x": -960.800049,
+				"y": 761.206665
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/Torch_cavity.png"
+			},
+			"type": "image"
+		},
+		{
+			"name": "brush_select_from_id",
+			"node_position": {
+				"x": -1196.544678,
+				"y": 880.684937
+			},
+			"parameters": {
+				"id": {
+					"a": 1,
+					"b": 1,
+					"g": 0.301758,
+					"r": 0.101929,
+					"type": "Color"
+				}
+			},
+			"type": "brush_select_from_id"
+		},
+		{
+			"name": "fbm2",
+			"node_position": {
+				"x": -88.244324,
+				"y": -1.801536
+			},
+			"parameters": {
+				"folds": 0,
+				"iterations": 1,
+				"noise": 2,
+				"persistence": 0.5,
+				"scale_x": 2,
+				"scale_y": 2
+			},
+			"type": "fbm2"
+		},
+		{
+			"name": "normal_map",
+			"node_position": {
+				"x": 1152.800049,
+				"y": -458.939026
+			},
+			"parameters": {
+				"param0": 11,
+				"param1": 0.1,
+				"param2": 1,
+				"param4": 1
+			},
+			"type": "normal_map"
+		},
+		{
+			"name": "warp",
+			"node_position": {
+				"x": 215.355606,
+				"y": -26.406565
+			},
+			"parameters": {
+				"amount": 0.035,
+				"eps": 0.1,
+				"mode": 1
+			},
+			"type": "warp"
+		},
+		{
+			"name": "tonality_2",
+			"node_position": {
+				"x": 211.755585,
+				"y": 138.930283
+			},
+			"parameters": {
+				"curve": {
+					"points": [
+						{
+							"ls": 0,
+							"rs": 0.147516,
+							"x": 0,
+							"y": 0
+						},
+						{
+							"ls": 0.134298,
+							"rs": -0,
+							"x": 1,
+							"y": 1
+						}
+					],
+					"type": "Curve"
+				}
+			},
+			"seed_value": 26844,
+			"type": "tonality"
+		},
+		{
+			"name": "colorize",
+			"node_position": {
+				"x": -6.244371,
+				"y": 175.693146
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0,
+							"g": 0,
+							"pos": 0,
+							"r": 0
+						},
+						{
+							"a": 1,
+							"b": 1,
+							"g": 1,
+							"pos": 1,
+							"r": 1
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"type": "colorize"
+		},
+		{
+			"name": "fast_blur",
+			"node_position": {
+				"x": 871.999939,
+				"y": -417.19455
+			},
+			"parameters": {
+				"param0": 11,
+				"param1": 3,
+				"param2": 2
+			},
+			"type": "fast_blur"
+		},
+		{
+			"name": "tones_step",
+			"node_position": {
+				"x": -487.044495,
+				"y": 742.820923
+			},
+			"parameters": {
+				"invert": false,
+				"value": 0.39,
+				"width": 0.14
+			},
+			"type": "tones_step"
+		},
+		{
+			"name": "tex3d_apply_invuvmap",
+			"node_position": {
+				"x": -704.887329,
+				"y": 498.370575
+			},
+			"parameters": {
+
+			},
+			"shader_model": {
+				"code": "",
+				"global": "",
+				"inputs": [
+					{
+						"default": "vec3(1.0)",
+						"label": "Texture",
+						"longdesc": "The input 3D texture",
+						"name": "t",
+						"shortdesc": "Texture",
+						"type": "tex3d"
+					},
+					{
+						"default": "vec3(0.0)",
+						"label": "Inv. UV Map",
+						"longdesc": "The inverse UV map of the object",
+						"name": "map",
+						"shortdesc": "InvUVMap",
+						"type": "rgb"
+					}
+				],
+				"instance": "",
+				"longdesc": "This node applies a 3D texture to an object using its inverse UV map.",
+				"name": "TEX3D Apply",
+				"outputs": [
+					{
+						"longdesc": "The generated texture",
+						"rgb": "$t(vec4($map($uv), 0.0))",
+						"shortdesc": "Output",
+						"type": "rgb"
+					}
+				],
+				"parameters": [
+
+				],
+				"shortdesc": "TEX3D Apply"
+			},
+			"type": "shader"
+		},
+		{
+			"name": "tex3d_fbm_2",
+			"node_position": {
+				"x": -988.687317,
+				"y": 341.932556
+			},
+			"parameters": {
+				"iterations": 4,
+				"noise": 1,
+				"persistence": 0.5,
+				"scale_x": 12,
+				"scale_y": 32,
+				"scale_z": 32
+			},
+			"type": "tex3d_fbm"
+		},
+		{
+			"name": "image_6",
+			"node_position": {
+				"x": -915.887573,
+				"y": 542.635437
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/Torch_position.exr"
+			},
+			"type": "image"
+		},
+		{
+			"name": "tones_step_2",
+			"node_position": {
+				"x": -509.887329,
+				"y": 546.016846
+			},
+			"parameters": {
+				"invert": false,
+				"value": 0.49,
+				"width": 0.03
+			},
+			"type": "tones_step"
+		},
+		{
+			"name": "blend",
+			"node_position": {
+				"x": -173.165848,
+				"y": 577.032166
+			},
+			"parameters": {
+				"amount": 1,
+				"blend_type": 2
+			},
+			"type": "blend"
+		},
+		{
+			"name": "colorize_3",
+			"node_position": {
+				"x": 46.112751,
+				"y": 377.096252
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.131686,
+							"g": 0.131686,
+							"pos": 0,
+							"r": 0.131686
+						},
+						{
+							"a": 1,
+							"b": 1,
+							"g": 1,
+							"pos": 1,
+							"r": 1
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"type": "colorize"
+		},
+		{
+			"name": "colorize_2",
+			"node_position": {
+				"x": 63.712639,
+				"y": 660.958618
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.697037,
+							"g": 0.697037,
+							"pos": 0,
+							"r": 0.697037
+						},
+						{
+							"a": 1,
+							"b": 0.172291,
+							"g": 0.172291,
+							"pos": 1,
+							"r": 0.172291
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"type": "colorize"
+		},
+		{
+			"name": "tex3d_fbm_3",
+			"node_position": {
+				"x": 552.846069,
+				"y": -822.437195
+			},
+			"parameters": {
+				"iterations": 1,
+				"noise": 2,
+				"persistence": 0.5,
+				"scale_x": 12,
+				"scale_y": 32,
+				"scale_z": 32
+			},
+			"type": "tex3d_fbm"
+		},
+		{
+			"name": "image_5",
+			"node_position": {
+				"x": 608.845886,
+				"y": -516.185425
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/Torch_position.exr"
+			},
+			"type": "image"
+		},
+		{
+			"name": "tex3d_apply_invuvmap_2",
+			"node_position": {
+				"x": 839.046082,
+				"y": -677.193787
+			},
+			"parameters": {
+
+			},
+			"shader_model": {
+				"code": "",
+				"global": "",
+				"inputs": [
+					{
+						"default": "vec3(1.0)",
+						"label": "Texture",
+						"longdesc": "The input 3D texture",
+						"name": "t",
+						"shortdesc": "Texture",
+						"type": "tex3d"
+					},
+					{
+						"default": "vec3(0.0)",
+						"label": "Inv. UV Map",
+						"longdesc": "The inverse UV map of the object",
+						"name": "map",
+						"shortdesc": "InvUVMap",
+						"type": "rgb"
+					}
+				],
+				"instance": "",
+				"longdesc": "This node applies a 3D texture to an object using its inverse UV map.",
+				"name": "TEX3D Apply",
+				"outputs": [
+					{
+						"longdesc": "The generated texture",
+						"rgb": "$t(vec4($map($uv), 0.0))",
+						"shortdesc": "Output",
+						"type": "rgb"
+					}
+				],
+				"parameters": [
+
+				],
+				"shortdesc": "TEX3D Apply"
+			},
+			"type": "shader"
+		},
+		{
+			"name": "15604",
+			"node_position": {
+				"x": 599.512695,
+				"y": -36.807556
+			},
+			"parameters": {
+				"amount": 0.35,
+				"blend_type": 0,
+				"format": 1
+			},
+			"shader_model": {
+				"code": "",
+				"global": "vec3 pre_process_default(vec3 c) {\n\tfloat z = sqrt(1.0-c.x*c.x-c.y*c.y);\n\treturn vec3(c.x, c.y, z); \n}\n\nvec3 pre_process_other(vec3 c) {\n\treturn c;\n}\n\nvec3 post_process_default(vec3 c) {\n\treturn vec3(c.x, c.y, 0.0);\n}\n\nvec3 post_process_other(vec3 c) {\n\treturn c;\n}",
+				"inputs": [
+					{
+						"default": "vec3(0.05, 0.5, 1.0)",
+						"label": "Source1",
+						"name": "s1",
+						"type": "rgb"
+					},
+					{
+						"default": "vec3(0.05, 0.5, 1.0)",
+						"label": "Source2",
+						"name": "s2",
+						"type": "rgb"
+					},
+					{
+						"default": "1.0",
+						"label": "Oppacity",
+						"name": "a",
+						"type": "f"
+					}
+				],
+				"instance": "vec3 $(name)_blend_reorient(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1) * 0.5 + 0.5;\n\tn2 = pre_process_$format(n2) * 0.5 + 0.5;\n\tvec3 t = n1*vec3( 2,  2, 2) + vec3(-1, -1,  0);\n\tvec3 u = n2*vec3(-2, -2, 2) + vec3( 1,  1, -1);\n\tvec3 r = mix(n2 * 2.0 - 1.0, t * dot(t, u) / t.z - u, opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}\n\nvec3 $(name)_blend_whiteout(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1);\n\tn2 = pre_process_$format(n2);\n\tvec3 r = mix(n2, normalize(vec3(n1.xy + n2.xy, n1.z*n2.z)), opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}\n\nvec3 $(name)_blend_udn(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1);\n\tn2 = pre_process_$format(n2);\n\tvec3 r = mix(n2, normalize(vec3(n1.xy + n2.xy, n1.z)), opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}",
+				"name": "Normal Blend",
+				"outputs": [
+					{
+						"rgb": "$(name)_blend_$blend_type($uv, $s1($uv), $s2($uv), $amount * $a($uv))",
+						"type": "rgb"
+					}
+				],
+				"parameters": [
+					{
+						"default": 0,
+						"label": "",
+						"longdesc": "Ensure that you set the format to the same normal format as the input format for correct results. Output will be in selected format.",
+						"name": "format",
+						"shortdesc": "Format",
+						"type": "enum",
+						"values": [
+							{
+								"name": "Default",
+								"value": "default"
+							},
+							{
+								"name": "OpenGL",
+								"value": "other"
+							},
+							{
+								"name": "DirectX",
+								"value": "other"
+							}
+						]
+					},
+					{
+						"default": 0,
+						"label": "",
+						"name": "blend_type",
+						"type": "enum",
+						"values": [
+							{
+								"name": "Reorient",
+								"value": "reorient"
+							},
+							{
+								"name": "Whiteout",
+								"value": "whiteout"
+							},
+							{
+								"name": "UDN",
+								"value": "udn"
+							}
+						]
+					},
+					{
+						"control": "None",
+						"default": 0.5,
+						"label": "",
+						"max": 1,
+						"min": 0,
+						"name": "amount",
+						"step": 0.01,
+						"type": "float"
+					}
+				]
+			},
+			"type": "shader"
+		},
+		{
+			"name": "tones_step_3",
+			"node_position": {
+				"x": 175.712921,
+				"y": 1471.168701
+			},
+			"parameters": {
+				"invert": true,
+				"value": 0.28,
+				"width": 0.1
+			},
+			"type": "tones_step"
+		},
+		{
+			"name": "image_4",
+			"node_position": {
+				"x": -88.687149,
+				"y": 1462.989502
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/Torch_ao2.png"
+			},
+			"type": "image"
+		},
+		{
+			"name": "blend_2",
+			"node_position": {
+				"x": 488.792755,
+				"y": 1336.591187
+			},
+			"parameters": {
+				"amount": 1,
+				"blend_type": 2
+			},
+			"type": "blend"
+		},
+		{
+			"name": "tex3d_fbm_5",
+			"node_position": {
+				"x": -286.007355,
+				"y": 1150.898071
+			},
+			"parameters": {
+				"iterations": 4,
+				"noise": 1,
+				"persistence": 0.5,
+				"scale_x": 12,
+				"scale_y": 32,
+				"scale_z": 32
+			},
+			"type": "tex3d_fbm"
+		},
+		{
+			"name": "tones_step_4",
+			"node_position": {
+				"x": 196.792633,
+				"y": 1250.233032
+			},
+			"parameters": {
+				"invert": false,
+				"value": 0.49,
+				"width": 0.1
+			},
+			"type": "tones_step"
+		},
+		{
+			"name": "image_7",
+			"node_position": {
+				"x": -223.60759,
+				"y": 1350.801392
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/Torch_position.exr"
+			},
+			"type": "image"
+		},
+		{
+			"name": "tex3d_apply_invuvmap_3",
+			"node_position": {
+				"x": 1.792625,
+				"y": 1202.586792
+			},
+			"parameters": {
+
+			},
+			"shader_model": {
+				"code": "",
+				"global": "",
+				"inputs": [
+					{
+						"default": "vec3(1.0)",
+						"label": "Texture",
+						"longdesc": "The input 3D texture",
+						"name": "t",
+						"shortdesc": "Texture",
+						"type": "tex3d"
+					},
+					{
+						"default": "vec3(0.0)",
+						"label": "Inv. UV Map",
+						"longdesc": "The inverse UV map of the object",
+						"name": "map",
+						"shortdesc": "InvUVMap",
+						"type": "rgb"
+					}
+				],
+				"instance": "",
+				"longdesc": "This node applies a 3D texture to an object using its inverse UV map.",
+				"name": "TEX3D Apply",
+				"outputs": [
+					{
+						"longdesc": "The generated texture",
+						"rgb": "$t(vec4($map($uv), 0.0))",
+						"shortdesc": "Output",
+						"type": "rgb"
+					}
+				],
+				"parameters": [
+
+				],
+				"shortdesc": "TEX3D Apply"
+			},
+			"type": "shader"
+		},
+		{
+			"name": "blend_3",
+			"node_position": {
+				"x": 294.912598,
+				"y": 294.138763
+			},
+			"parameters": {
+				"amount": 1,
+				"blend_type": 0
+			},
+			"type": "blend"
+		},
+		{
+			"name": "blend_4",
+			"node_position": {
+				"x": 310.112701,
+				"y": 782.702148
+			},
+			"parameters": {
+				"amount": 0.31,
+				"blend_type": 0
+			},
+			"type": "blend"
+		},
+		{
+			"name": "tex3d_apply_invuvmap_4",
+			"node_position": {
+				"x": -559.087585,
+				"y": 1145.825439
+			},
+			"parameters": {
+
+			},
+			"shader_model": {
+				"code": "",
+				"global": "",
+				"inputs": [
+					{
+						"default": "vec3(1.0)",
+						"label": "Texture",
+						"longdesc": "The input 3D texture",
+						"name": "t",
+						"shortdesc": "Texture",
+						"type": "tex3d"
+					},
+					{
+						"default": "vec3(0.0)",
+						"label": "Inv. UV Map",
+						"longdesc": "The inverse UV map of the object",
+						"name": "map",
+						"shortdesc": "InvUVMap",
+						"type": "rgb"
+					}
+				],
+				"instance": "",
+				"longdesc": "This node applies a 3D texture to an object using its inverse UV map.",
+				"name": "TEX3D Apply",
+				"outputs": [
+					{
+						"longdesc": "The generated texture",
+						"rgb": "$t(vec4($map($uv), 0.0))",
+						"shortdesc": "Output",
+						"type": "rgb"
+					}
+				],
+				"parameters": [
+
+				],
+				"shortdesc": "TEX3D Apply"
+			},
+			"type": "shader"
+		},
+		{
+			"name": "image_8",
+			"node_position": {
+				"x": -784.487793,
+				"y": 1294.040039
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/Torch_position.exr"
+			},
+			"type": "image"
+		},
+		{
+			"name": "tex3d_fbm_6",
+			"node_position": {
+				"x": -846.887573,
+				"y": 1094.136719
+			},
+			"parameters": {
+				"iterations": 8,
+				"noise": 1,
+				"persistence": 0.8,
+				"scale_x": 12,
+				"scale_y": 32,
+				"scale_z": 32
+			},
+			"type": "tex3d_fbm"
+		},
+		{
+			"name": "colorize_4",
+			"node_position": {
+				"x": -180.287338,
+				"y": 892.046814
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.675172,
+							"g": 0.675172,
+							"pos": 0,
+							"r": 0.675172
+						},
+						{
+							"a": 1,
+							"b": 1,
+							"g": 1,
+							"pos": 1,
+							"r": 1
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"type": "colorize"
+		},
+		{
+			"name": "tex3d_apply_invuvmap_5",
+			"node_position": {
+				"x": -241.487549,
+				"y": 213.476929
+			},
+			"parameters": {
+
+			},
+			"shader_model": {
+				"code": "",
+				"global": "",
+				"inputs": [
+					{
+						"default": "vec3(1.0)",
+						"label": "Texture",
+						"longdesc": "The input 3D texture",
+						"name": "t",
+						"shortdesc": "Texture",
+						"type": "tex3d"
+					},
+					{
+						"default": "vec3(0.0)",
+						"label": "Inv. UV Map",
+						"longdesc": "The inverse UV map of the object",
+						"name": "map",
+						"shortdesc": "InvUVMap",
+						"type": "rgb"
+					}
+				],
+				"instance": "",
+				"longdesc": "This node applies a 3D texture to an object using its inverse UV map.",
+				"name": "TEX3D Apply",
+				"outputs": [
+					{
+						"longdesc": "The generated texture",
+						"rgb": "$t(vec4($map($uv), 0.0))",
+						"shortdesc": "Output",
+						"type": "rgb"
+					}
+				],
+				"parameters": [
+
+				],
+				"shortdesc": "TEX3D Apply"
+			},
+			"type": "shader"
+		},
+		{
+			"name": "image_9",
+			"node_position": {
+				"x": -466.887756,
+				"y": 361.691528
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/Torch_position.exr"
+			},
+			"type": "image"
+		},
+		{
+			"name": "tex3d_fbm_7",
+			"node_position": {
+				"x": -529.287537,
+				"y": 161.788208
+			},
+			"parameters": {
+				"iterations": 8,
+				"noise": 1,
+				"persistence": 0.7,
+				"scale_x": 12,
+				"scale_y": 32,
+				"scale_z": 32
+			},
+			"type": "tex3d_fbm"
+		},
+		{
+			"name": "colorize_5",
+			"node_position": {
+				"x": -169.887329,
+				"y": 306.730255
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.219186,
+							"g": 0.278121,
+							"pos": 0,
+							"r": 0.541619
+						},
+						{
+							"a": 1,
+							"b": 0.219186,
+							"g": 0.466907,
+							"pos": 1,
+							"r": 0.541619
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"type": "colorize"
+		},
+		{
+			"name": "normal_map_2",
+			"node_position": {
+				"x": 479.712708,
+				"y": 125.420448
+			},
+			"parameters": {
+				"param0": 11,
+				"param1": 1,
+				"param2": 1,
+				"param4": 1
+			},
+			"type": "normal_map"
+		},
+		{
+			"name": "15604_2",
+			"node_position": {
+				"x": 824.312561,
+				"y": 115.918449
+			},
+			"parameters": {
+				"amount": 0.3,
+				"blend_type": 0,
+				"format": 1
+			},
+			"shader_model": {
+				"code": "",
+				"global": "vec3 pre_process_default(vec3 c) {\n\tfloat z = sqrt(1.0-c.x*c.x-c.y*c.y);\n\treturn vec3(c.x, c.y, z); \n}\n\nvec3 pre_process_other(vec3 c) {\n\treturn c;\n}\n\nvec3 post_process_default(vec3 c) {\n\treturn vec3(c.x, c.y, 0.0);\n}\n\nvec3 post_process_other(vec3 c) {\n\treturn c;\n}",
+				"inputs": [
+					{
+						"default": "vec3(0.05, 0.5, 1.0)",
+						"label": "Source1",
+						"name": "s1",
+						"type": "rgb"
+					},
+					{
+						"default": "vec3(0.05, 0.5, 1.0)",
+						"label": "Source2",
+						"name": "s2",
+						"type": "rgb"
+					},
+					{
+						"default": "1.0",
+						"label": "Oppacity",
+						"name": "a",
+						"type": "f"
+					}
+				],
+				"instance": "vec3 $(name)_blend_reorient(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1) * 0.5 + 0.5;\n\tn2 = pre_process_$format(n2) * 0.5 + 0.5;\n\tvec3 t = n1*vec3( 2,  2, 2) + vec3(-1, -1,  0);\n\tvec3 u = n2*vec3(-2, -2, 2) + vec3( 1,  1, -1);\n\tvec3 r = mix(n2 * 2.0 - 1.0, t * dot(t, u) / t.z - u, opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}\n\nvec3 $(name)_blend_whiteout(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1);\n\tn2 = pre_process_$format(n2);\n\tvec3 r = mix(n2, normalize(vec3(n1.xy + n2.xy, n1.z*n2.z)), opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}\n\nvec3 $(name)_blend_udn(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1);\n\tn2 = pre_process_$format(n2);\n\tvec3 r = mix(n2, normalize(vec3(n1.xy + n2.xy, n1.z)), opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}",
+				"name": "Normal Blend",
+				"outputs": [
+					{
+						"rgb": "$(name)_blend_$blend_type($uv, $s1($uv), $s2($uv), $amount * $a($uv))",
+						"type": "rgb"
+					}
+				],
+				"parameters": [
+					{
+						"default": 0,
+						"label": "",
+						"longdesc": "Ensure that you set the format to the same normal format as the input format for correct results. Output will be in selected format.",
+						"name": "format",
+						"shortdesc": "Format",
+						"type": "enum",
+						"values": [
+							{
+								"name": "Default",
+								"value": "default"
+							},
+							{
+								"name": "OpenGL",
+								"value": "other"
+							},
+							{
+								"name": "DirectX",
+								"value": "other"
+							}
+						]
+					},
+					{
+						"default": 0,
+						"label": "",
+						"name": "blend_type",
+						"type": "enum",
+						"values": [
+							{
+								"name": "Reorient",
+								"value": "reorient"
+							},
+							{
+								"name": "Whiteout",
+								"value": "whiteout"
+							},
+							{
+								"name": "UDN",
+								"value": "udn"
+							}
+						]
+					},
+					{
+						"control": "None",
+						"default": 0.5,
+						"label": "",
+						"max": 1,
+						"min": 0,
+						"name": "amount",
+						"step": 0.01,
+						"type": "float"
+					}
+				]
+			},
+			"type": "shader"
+		},
+		{
+			"name": "decompose_2",
+			"node_position": {
+				"x": -998.6875,
+				"y": 882.85614
+			},
+			"parameters": {
+
+			},
+			"type": "decompose"
+		},
+		{
+			"name": "blend_5",
+			"node_position": {
+				"x": -726.687317,
+				"y": 925.033264
+			},
+			"parameters": {
+				"amount": 0.3,
+				"blend_type": 2
+			},
+			"type": "blend"
+		},
+		{
+			"name": "invert_2",
+			"node_position": {
+				"x": -954.687439,
+				"y": 982.807739
+			},
+			"parameters": {
+
+			},
+			"type": "invert"
+		},
+		{
+			"name": "tex3d_fbm_4",
+			"node_position": {
+				"x": 1128.312744,
+				"y": 707.124207
+			},
+			"parameters": {
+				"iterations": 4,
+				"noise": 1,
+				"persistence": 0.5,
+				"scale_x": 12,
+				"scale_y": 32,
+				"scale_z": 1
+			},
+			"type": "tex3d_fbm"
+		},
+		{
+			"name": "image_10",
+			"node_position": {
+				"x": 1030.05127,
+				"y": 1008.135498
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/Torch_position.exr"
+			},
+			"type": "image"
+		},
+		{
+			"name": "tex3d_apply_invuvmap_6",
+			"node_position": {
+				"x": 1416.112671,
+				"y": 758.812927
+			},
+			"parameters": {
+
+			},
+			"shader_model": {
+				"code": "",
+				"global": "",
+				"inputs": [
+					{
+						"default": "vec3(1.0)",
+						"label": "Texture",
+						"longdesc": "The input 3D texture",
+						"name": "t",
+						"shortdesc": "Texture",
+						"type": "tex3d"
+					},
+					{
+						"default": "vec3(0.0)",
+						"label": "Inv. UV Map",
+						"longdesc": "The inverse UV map of the object",
+						"name": "map",
+						"shortdesc": "InvUVMap",
+						"type": "rgb"
+					}
+				],
+				"instance": "",
+				"longdesc": "This node applies a 3D texture to an object using its inverse UV map.",
+				"name": "TEX3D Apply",
+				"outputs": [
+					{
+						"longdesc": "The generated texture",
+						"rgb": "$t(vec4($map($uv), 0.0))",
+						"shortdesc": "Output",
+						"type": "rgb"
+					}
+				],
+				"parameters": [
+
+				],
+				"shortdesc": "TEX3D Apply"
+			},
+			"type": "shader"
+		},
+		{
+			"name": "tex3d_rotate",
+			"node_position": {
+				"x": 1281.263062,
+				"y": 559.625488
+			},
+			"parameters": {
+				"ax": 57,
+				"ay": 0,
+				"az": 0
+			},
+			"type": "tex3d_rotate"
+		},
+		{
+			"name": "image_11",
+			"node_position": {
+				"x": 1526.040039,
+				"y": 460.919128
+			},
+			"parameters": {
+				"image": "%PROJECT_PATH%/Torch_ID.png"
+			},
+			"preview": 0,
+			"type": "image"
+		},
+		{
+			"name": "math",
+			"node_position": {
+				"x": 1422.006836,
+				"y": 866.407532
+			},
+			"parameters": {
+				"clamp": false,
+				"default_in1": 0,
+				"default_in2": 10,
+				"op": 2
+			},
+			"type": "math"
+		},
+		{
+			"name": "math_2",
+			"node_position": {
+				"x": 1410.18457,
+				"y": 1016.72168
+			},
+			"parameters": {
+				"clamp": false,
+				"default_in1": 0,
+				"default_in2": 0,
+				"op": 12
+			},
+			"type": "math"
+		},
+		{
+			"name": "colorize_6",
+			"node_position": {
+				"x": 1643.494385,
+				"y": 1044.330078
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.077454,
+							"g": 0.210571,
+							"pos": 0,
+							"r": 0.396484
+						},
+						{
+							"a": 1,
+							"b": 0.071533,
+							"g": 0.197266,
+							"pos": 0.105288,
+							"r": 0.394287
+						},
+						{
+							"a": 1,
+							"b": 0.060181,
+							"g": 0.237671,
+							"pos": 0.497091,
+							"r": 0.467773
+						},
+						{
+							"a": 1,
+							"b": 0.066772,
+							"g": 0.216675,
+							"pos": 0.766351,
+							"r": 0.463379
+						},
+						{
+							"a": 1,
+							"b": 0.039429,
+							"g": 0.111755,
+							"pos": 0.970794,
+							"r": 0.252197
+						},
+						{
+							"a": 1,
+							"b": 0.043823,
+							"g": 0.099365,
+							"pos": 1,
+							"r": 0.218994
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"type": "colorize"
+		},
+		{
+			"name": "colorize_7",
+			"node_position": {
+				"x": 1645.478027,
+				"y": 1135.525635
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.675853,
+							"g": 0.675853,
+							"pos": 0.39504,
+							"r": 0.675853
+						},
+						{
+							"a": 1,
+							"b": 0.319776,
+							"g": 0.319776,
+							"pos": 1,
+							"r": 0.319776
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"type": "colorize"
+		},
+		{
+			"name": "tex3d_rotate_2",
+			"node_position": {
+				"x": 1192.657349,
+				"y": 1169.006104
+			},
+			"parameters": {
+				"ax": 57,
+				"ay": 0,
+				"az": 0
+			},
+			"type": "tex3d_rotate"
+		},
+		{
+			"name": "tex3d_apply_invuvmap_7",
+			"node_position": {
+				"x": 1327.506958,
+				"y": 1368.193604
+			},
+			"parameters": {
+
+			},
+			"shader_model": {
+				"code": "",
+				"global": "",
+				"inputs": [
+					{
+						"default": "vec3(1.0)",
+						"label": "Texture",
+						"longdesc": "The input 3D texture",
+						"name": "t",
+						"shortdesc": "Texture",
+						"type": "tex3d"
+					},
+					{
+						"default": "vec3(0.0)",
+						"label": "Inv. UV Map",
+						"longdesc": "The inverse UV map of the object",
+						"name": "map",
+						"shortdesc": "InvUVMap",
+						"type": "rgb"
+					}
+				],
+				"instance": "",
+				"longdesc": "This node applies a 3D texture to an object using its inverse UV map.",
+				"name": "TEX3D Apply",
+				"outputs": [
+					{
+						"longdesc": "The generated texture",
+						"rgb": "$t(vec4($map($uv), 0.0))",
+						"shortdesc": "Output",
+						"type": "rgb"
+					}
+				],
+				"parameters": [
+
+				],
+				"shortdesc": "TEX3D Apply"
+			},
+			"type": "shader"
+		},
+		{
+			"name": "tex3d_fbm_8",
+			"node_position": {
+				"x": 1032.434204,
+				"y": 1321.130737
+			},
+			"parameters": {
+				"iterations": 8,
+				"noise": 1,
+				"persistence": 0.8,
+				"scale_x": 12,
+				"scale_y": 32,
+				"scale_z": 1
+			},
+			"type": "tex3d_fbm"
+		},
+		{
+			"name": "normal_map_3",
+			"node_position": {
+				"x": 1562.172119,
+				"y": 1313.004028
+			},
+			"parameters": {
+				"param0": 11,
+				"param1": 1,
+				"param2": 1,
+				"param4": 1
+			},
+			"type": "normal_map"
+		},
+		{
+			"name": "brush_select_from_id_2",
+			"node_position": {
+				"x": 1676.602051,
+				"y": 458.2547
+			},
+			"parameters": {
+				"id": {
+					"a": 1,
+					"b": 0.101929,
+					"g": 1,
+					"r": 0.866211,
+					"type": "Color"
+				}
+			},
+			"type": "brush_select_from_id"
+		},
+		{
+			"name": "decompose_3",
+			"node_position": {
+				"x": 1886.800171,
+				"y": 457.594269
+			},
+			"parameters": {
+
+			},
+			"type": "decompose"
+		},
+		{
+			"name": "blend_6",
+			"node_position": {
+				"x": 1900.463135,
+				"y": 725.039612
+			},
+			"parameters": {
+				"amount": 1,
+				"blend_type": 0
+			},
+			"type": "blend"
+		},
+		{
+			"name": "blend_7",
+			"node_position": {
+				"x": 1952.607788,
+				"y": 876.995544
+			},
+			"parameters": {
+				"amount": 1,
+				"blend_type": 0
+			},
+			"type": "blend"
+		},
+		{
+			"name": "uniform_greyscale",
+			"node_position": {
+				"x": 1605.44165,
+				"y": 811.883179
+			},
+			"parameters": {
+				"color": 0
+			},
+			"type": "uniform_greyscale"
+		},
+		{
+			"name": "blend_8",
+			"node_position": {
+				"x": 1910.241577,
+				"y": 979.002197
+			},
+			"parameters": {
+				"amount": 1,
+				"blend_type": 0
+			},
+			"type": "blend"
+		},
+		{
+			"name": "15604_3",
+			"node_position": {
+				"x": 1972.841309,
+				"y": 1239.952271
+			},
+			"parameters": {
+				"amount": 0.1,
+				"blend_type": 0,
+				"format": 1
+			},
+			"shader_model": {
+				"code": "",
+				"global": "vec3 pre_process_default(vec3 c) {\n\tfloat z = sqrt(1.0-c.x*c.x-c.y*c.y);\n\treturn vec3(c.x, c.y, z); \n}\n\nvec3 pre_process_other(vec3 c) {\n\treturn c;\n}\n\nvec3 post_process_default(vec3 c) {\n\treturn vec3(c.x, c.y, 0.0);\n}\n\nvec3 post_process_other(vec3 c) {\n\treturn c;\n}",
+				"inputs": [
+					{
+						"default": "vec3(0.05, 0.5, 1.0)",
+						"label": "Source1",
+						"name": "s1",
+						"type": "rgb"
+					},
+					{
+						"default": "vec3(0.05, 0.5, 1.0)",
+						"label": "Source2",
+						"name": "s2",
+						"type": "rgb"
+					},
+					{
+						"default": "1.0",
+						"label": "Oppacity",
+						"name": "a",
+						"type": "f"
+					}
+				],
+				"instance": "vec3 $(name)_blend_reorient(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1) * 0.5 + 0.5;\n\tn2 = pre_process_$format(n2) * 0.5 + 0.5;\n\tvec3 t = n1*vec3( 2,  2, 2) + vec3(-1, -1,  0);\n\tvec3 u = n2*vec3(-2, -2, 2) + vec3( 1,  1, -1);\n\tvec3 r = mix(n2 * 2.0 - 1.0, t * dot(t, u) / t.z - u, opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}\n\nvec3 $(name)_blend_whiteout(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1);\n\tn2 = pre_process_$format(n2);\n\tvec3 r = mix(n2, normalize(vec3(n1.xy + n2.xy, n1.z*n2.z)), opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}\n\nvec3 $(name)_blend_udn(vec2 uv, vec3 c1, vec3 c2, float opacity) {\n\tvec3 n1 = c1 * 2.0 - 1.0;\n\tvec3 n2 = c2 * 2.0 - 1.0;\n\tn1 = pre_process_$format(n1);\n\tn2 = pre_process_$format(n2);\n\tvec3 r = mix(n2, normalize(vec3(n1.xy + n2.xy, n1.z)), opacity);\n\tr = post_process_$format(r);\n\treturn r * 0.5 + 0.5;\n}",
+				"name": "Normal Blend",
+				"outputs": [
+					{
+						"rgb": "$(name)_blend_$blend_type($uv, $s1($uv), $s2($uv), $amount * $a($uv))",
+						"type": "rgb"
+					}
+				],
+				"parameters": [
+					{
+						"default": 0,
+						"label": "",
+						"longdesc": "Ensure that you set the format to the same normal format as the input format for correct results. Output will be in selected format.",
+						"name": "format",
+						"shortdesc": "Format",
+						"type": "enum",
+						"values": [
+							{
+								"name": "Default",
+								"value": "default"
+							},
+							{
+								"name": "OpenGL",
+								"value": "other"
+							},
+							{
+								"name": "DirectX",
+								"value": "other"
+							}
+						]
+					},
+					{
+						"default": 0,
+						"label": "",
+						"name": "blend_type",
+						"type": "enum",
+						"values": [
+							{
+								"name": "Reorient",
+								"value": "reorient"
+							},
+							{
+								"name": "Whiteout",
+								"value": "whiteout"
+							},
+							{
+								"name": "UDN",
+								"value": "udn"
+							}
+						]
+					},
+					{
+						"control": "None",
+						"default": 0.5,
+						"label": "",
+						"max": 1,
+						"min": 0,
+						"name": "amount",
+						"step": 0.01,
+						"type": "float"
+					}
+				]
+			},
+			"type": "shader"
+		}
+	],
+	"parameters": {
+
+	},
+	"shortdesc": "",
+	"type": "graph"
+}
