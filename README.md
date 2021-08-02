@@ -1,2 +1,2 @@
-# godot_cellar_art
-Art assets for godot_cellar project
+# Godot Cellar Scene Art
+Art assets for https://github.com/Arnklit/godot_cellar
